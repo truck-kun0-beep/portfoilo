@@ -1401,7 +1401,37 @@ button {
    17. RESPONSIVE — MOBILE
    ======================== */
 @media (max-width: 768px) {
-  /* Navbar */
+
+  /* Keep nav-actions always visible (dark mode btn + hamburger) */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  /* Show the hamburger button */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--clr-text);
+    border-radius: 2px;
+    transition: all var(--t-normal);
+  }
+
+  /* Slide-down mobile menu — hidden by default */
   .nav-menu {
     position: fixed;
     top: var(--navbar-h);
@@ -1409,12 +1439,59 @@ button {
     width: 100%;
     background: var(--clr-bg);
     border-bottom: 1px solid var(--clr-border);
-    padding: 1rem 0;
+    padding: 0.75rem 0 1rem;
     transform: translateY(-110%);
     opacity: 0;
-    transition: transform var(--t-normal), opacity var(--t-normal);
+    pointer-events: none;          /* ← blocks ghost taps when hidden */
+    transition: transform 0.35s ease, opacity 0.35s ease;
     box-shadow: 0 8px 24px var(--clr-shadow);
+    z-index: 999;
   }
+
+  /* Menu open state */
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;          /* ← re-enables taps when visible */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0 1rem;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: var(--r-md);
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  .section { padding: 4rem 0; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .stats-grid    { grid-template-columns: repeat(2, 1fr); }
+  .form-row      { grid-template-columns: 1fr; }
+
+  /* Hero photo smaller on mobile */
+  .hero-photo        { width: 220px; height: 260px; }
+  .image-placeholder { width: 260px; height: 300px; }
+
+  /* Timeline */
+  .timeline::before  { left: 10px; }
+  .timeline-item     { padding-left: 40px; }
+  .timeline-dot      { left: 2px; }
+  .timeline-header   { flex-direction: column; gap: 0.5rem; }
+}
+
+@media (max-width: 480px) {
+  .stats-grid       { grid-template-columns: 1fr 1fr; }
+  .soft-skills-grid { grid-template-columns: 1fr 1fr; }
+  .footer-bottom    { flex-direction: column; gap: 1rem; }
+}
 
   .nav-menu.open {
     transform: translateY(0);
@@ -1450,17 +1527,9 @@ button {
   .timeline-item { padding-left: 40px; }
   .timeline-dot { left: 2px; }
   .timeline-header { flex-direction: column; gap: 0.5rem; }
-}
 
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .soft-skills-grid { grid-template-columns: 1fr 1fr; }
   .footer-bottom { flex-direction: column; gap: 1rem; }
-}
-
-@media (max-width: 768px) {
-  .hero-photo {
-    width: 220px;
-    height: 260px;
-  }
 }
