@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al Jubaer Hussain | CSE Student & Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Truck-kun<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home"      class="nav-link active">Home</a></li>
+          <li><a href="#about"     class="nav-link">About</a></li>
+          <li><a href="#skills"    class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects"  class="nav-link">Projects</a></li>
+          <li><a href="#contact"   class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+
+      <!-- Left: Text -->
+      <div class="hero-text reveal">
+        <span class="hero-tag">👋 Hello, I'm</span>
+        <h1 class="hero-name">Al Jubaer Hussain</h1>
+        <h2 class="hero-title">
+          <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          A passionate CSE student exploring the world of software development — one line of code at a time. I build clean interfaces, solve real problems, and love learning new things every day.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact"  class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jubaer-hossain-168227363/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/jubaerh662" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="hero-image reveal reveal-right">
+        <div class="image-frame">
+          <img src="my-photo.jpg" alt="Jubaer Hossain" class="hero-photo">
+          <div class="image-decoration dec-1"></div>
+          <div class="image-decoration dec-2"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Floating elements -->
+    <div class="hero-float f1"><i class="fab fa-html5"></i></div>
+    <div class="hero-float f2"><i class="fab fa-css3-alt"></i></div>
+    <div class="hero-float f3"><i class="fab fa-js"></i></div>
+    <div class="hero-float f4"><i class="fab fa-python"></i></div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A little about who I am and what drives me</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: text -->
+        <div class="about-text reveal">
+          <h3>Who I Am</h3>
+          <p>
+            I'm a Computer Science and Engineering student with a deep curiosity for how things work under the hood. I enjoy building things for the web and writing code that solves real-world problems.
+          </p>
+          <p>
+            Currently, I'm learning frontend web development, data structures, and exploring Python for automation and scripting. My goal is to become a skilled full-stack developer and contribute to meaningful projects.
+          </p>
+          <p>
+            Outside of coding, I enjoy reading about technology, solving programming challenges, and constantly pushing myself to improve.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem;">Let's Talk <i class="fas fa-paper-plane"></i></a>
+        </div>
+
+        <!-- Right: info card -->
+        <div class="about-card reveal reveal-right">
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-user"></i> Name</span>
+              <span class="info-value">Al Jubaer Hussain</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-graduation-cap"></i> Degree</span>
+              <span class="info-value">B.Sc. in CSE</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-university"></i> University</span>
+              <span class="info-value">Daffodil International University</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+              <span class="info-value">Dhaka, Bangladesh</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-envelope"></i> Email</span>
+              <span class="info-value">jubaerh662@gmail.com</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-circle-check"></i> Status</span>
+              <span class="info-value available">Available for work</span>
+            </div>
+            <a href="cv.pdf" class="btn btn-primary btn-full" style="margin-top:1.5rem;">
+              Download CV <i class="fas fa-download"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I know</span>
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Technical Skills -->
+        <div class="skills-block reveal">
+          <h3 class="skills-block-title"><i class="fas fa-code"></i> Technical Skills</h3>
+          <div class="skill-bars">
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-info">
+                <span><i class="fab fa-html5 html-icon"></i> HTML5</span>
+                <span>85%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-info">
+                <span><i class="fab fa-css3-alt css-icon"></i> CSS3</span>
+                <span>80%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-info">
+                <span><i class="fab fa-js js-icon"></i> JavaScript</span>
+                <span>40%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="40"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-info">
+                <span><i class="fab fa-python py-icon"></i> Python</span>
+                <span>70%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-info">
+                <span><i class="fas fa-c c-icon"></i> C Language</span>
+                <span>80%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-info">
+                <span><i class="fab fa-git-alt git-icon"></i> Git & GitHub</span>
+                <span>72%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="72"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-block reveal reveal-right">
+          <h3 class="skills-block-title"><i class="fas fa-brain"></i> Soft Skills</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-card">
+              <i class="fas fa-lightbulb"></i>
+              <span>Problem Solving</span>
+            </div>
+            <div class="soft-skill-card">
+              <i class="fas fa-comments"></i>
+              <span>Communication</span>
+            </div>
+            <div class="soft-skill-card">
+              <i class="fas fa-people-group"></i>
+              <span>Teamwork</span>
+            </div>
+            <div class="soft-skill-card">
+              <i class="fas fa-clock"></i>
+              <span>Time Management</span>
+            </div>
+            <div class="soft-skill-card">
+              <i class="fas fa-magnifying-glass"></i>
+              <span>Research</span>
+            </div>
+            <div class="soft-skill-card">
+              <i class="fas fa-rotate"></i>
+              <span>Adaptability</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EDUCATION ======================== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My journey</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic background and learning path</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Bachelor of Science in Computer Science & Engineering</h3>
+                <span class="timeline-place"><i class="fas fa-university"></i> Daffodil International University</span>
+              </div>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2025 – Present</p>
+            <p class="timeline-desc">
+              Pursuing a full-time degree in CSE with a strong focus on software development, data structures, algorithms, and web technologies.
+            </p>
+            <div class="coursework">
+              <span class="course-tag">Data Structures</span>
+              <span class="course-tag">Algorithms</span>
+              <span class="course-tag">OOP</span>
+              <span class="course-tag">Database Systems</span>
+              <span class="course-tag">Web Technologies</span>
+              <span class="course-tag">Operating Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Higher Secondary Certificate (HSC)</h3>
+                <span class="timeline-place"><i class="fas fa-school"></i> Government Bangla College</span>
+              </div>
+              <span class="timeline-badge completed">Completed</span>
+            </div>
+            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 – 2024</p>
+            <p class="timeline-desc">
+              Completed Higher Secondary Certificate with Science group. Developed strong analytical and problem-solving foundation.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Secondary School Certificate (SSC)</h3>
+                <span class="timeline-place"><i class="fas fa-school"></i> Monipur High School & College</span>
+              </div>
+              <span class="timeline-badge completed">Completed</span>
+            </div>
+            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2020 – 2022</p>
+            <p class="timeline-desc">
+              Completed Secondary School Certificate with Science group. Developed strong analytical and problem-solving foundation.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">A selection of my work and experiments</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="ui">UI</button>
+      </div>
+
+      <!-- Project Cards -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>A clean, responsive portfolio site built with HTML, CSS, and vanilla JS. Features dark mode and smooth animations.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-list-check"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Task Manager App</h3>
+            <p>A simple to-do list app with local storage support, allowing users to add, complete, and delete tasks seamlessly.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="python">
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-terminal"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Weather CLI Tool</h3>
+            <p>A Python command-line tool that fetches and displays real-time weather data for any city using a public API.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>API</span><span>CLI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ui">
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>UI Component Library</h3>
+            <p>A collection of reusable, accessible UI components — buttons, cards, forms, modals — built purely with HTML and CSS.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="python">
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Expense Tracker</h3>
+            <p>A Python-based expense tracking script that categorizes spending, calculates totals, and exports data to CSV.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>CSV</span><span>OOP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-eye"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Blog Landing Page</h3>
+            <p>A modern, fully responsive blog landing page with article cards, category filtering, and newsletter subscription UI.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SERVICES ======================== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I offer</span>
+        <h2 class="section-title">Services</h2>
+        <p class="section-subtitle">Areas where I can contribute and add value</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, accessible, and performant websites using modern HTML, CSS, and JavaScript — focused on clean code and great UX.</p>
+          <div class="service-line"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-mobile-screen-button"></i>
+          </div>
+          <h3>Responsive Web Design</h3>
+          <p>Crafting layouts that look and work beautifully across all screen sizes — from large desktops to small mobile screens.</p>
+          <div class="service-line"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-pen-ruler"></i>
+          </div>
+          <h3>UI Layout Design</h3>
+          <p>Designing clean, well-structured page layouts with strong visual hierarchy, good spacing, and an eye for aesthetics and usability.</p>
+          <div class="service-line"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== STATS ======================== -->
+  <section class="stats section">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-folder-open"></i></div>
+          <h3 class="stat-number" data-target="10">0</h3>
+          <span class="stat-plus">+</span>
+          <p>Projects Completed</p>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-calendar-days"></i></div>
+          <h3 class="stat-number" data-target="1">0</h3>
+          <span class="stat-plus">+</span>
+          <p>Years Learning</p>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+          <h3 class="stat-number" data-target="5">0</h3>
+          <span class="stat-plus">+</span>
+          <p>Technologies</p>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <h3 class="stat-number" data-target="100">0</h3>
+          <span class="stat-plus">+</span>
+          <p>Problems Solved</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Have a question or want to work together? Drop me a message.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>jubaerh662@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+880 1990-421055</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Dhaka, Bangladesh</p>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/truck-kun0-beep" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jubaer-hossain-168227363/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/jubaerh662" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/_truck._.kun/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Truck Kun" />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="truck.kun@email.com" />
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+              <span class="form-error" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-circle-check"></i>
+              Your message was sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#home" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>Truck-kun<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>Crafting clean code and beautiful interfaces — one project at a time.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/truck-kun0-beep" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jubaer-hossain-168227363/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/jubaerh662" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/_truck._.kun/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Al Jubaer Hussain. Designed & built with <i class="fas fa-heart"></i></p>
+        <a href="#home" class="back-top" id="backTop" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
